@@ -7,3 +7,5 @@ ORYX_ENABLE = yes
 RGB_MATRIX_CUSTOM_KB = yes
 SPACE_CADET_ENABLE = no
 SRC += features/achordion.c
+AUTO_SHIFT_ENABLE = yes
+CAPS_WORD_ENABLE = yes
