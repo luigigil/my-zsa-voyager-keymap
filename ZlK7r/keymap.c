@@ -75,19 +75,19 @@ void housekeeping_task_user(void) {
   achordion_task();
 }
 
-uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t* record) {
-  // If you quickly hold a tap-hold key after tapping it, the tap action is
-  // repeated. Key repeating is useful e.g. for Vim navigation keys, but can
-  // lead to missed triggers in fast typing. Here, returning 0 means we
-  // instead want to "force hold" and disable key repeating.
-  switch (keycode) {
-    case HOME_N:
-    // Repeating is useful for Vim navigation keys.
-    case QHOME_J:
-    case QHOME_K:
-    case QHOME_L:
-      return QUICK_TAP_TERM;  // Enable key repeating.
-    default:
-      return 0;  // Otherwise, force hold and disable key repeating.
-  }
-}
+/*uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t* record) {*/
+/*  // If you quickly hold a tap-hold key after tapping it, the tap action is*/
+/*  // repeated. Key repeating is useful e.g. for Vim navigation keys, but can*/
+/*  // lead to missed triggers in fast typing. Here, returning 0 means we*/
+/*  // instead want to "force hold" and disable key repeating.*/
+/*  switch (keycode) {*/
+/*    case HOME_N:*/
+/*    // Repeating is useful for Vim navigation keys.*/
+/*    case QHOME_J:*/
+/*    case QHOME_K:*/
+/*    case QHOME_L:*/
+/*      return QUICK_TAP_TERM;  // Enable key repeating.*/
+/*    default:*/
+/*      return 0;  // Otherwise, force hold and disable key repeating.*/
+/*  }*/
+/*}*/
